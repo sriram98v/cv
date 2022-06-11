@@ -1,0 +1,10 @@
+{
+    "name":"Sriram Vijendran",
+    "pages": [
+        {"name": "Home", "url": "/"},
+        {"name": "Education", "url": "/education"},
+        {"name": "Experience", "url": "/experience"},
+        {"name": "Skills", "url": "/skills"},
+        {"name": "Achievements", "url": "/achievements"}
+	]
+}

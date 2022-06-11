@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/sriram98v/cv/issues"
   },
-  "homepage": "https://github.com/sriram98v/cv#readme"
+  "homepage": "https://github.com/sriram98v/cv#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
 }

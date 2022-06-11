@@ -1,0 +1,36 @@
+---
+title: Hello World
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Sriram Vijendran</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/spectre.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/index.css' | url }}">
+
+  </head>
+
+  <body>
+    {% include "header.njk" %}
+
+    <main class="bg header-margin">
+        <div class="container">
+        <div class="columns flex-center">
+          <div class="column col-6 col-md-12 pa2">
+              {{ content | safe }}
+          </div>
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+
+
+  </body>
+</html>
