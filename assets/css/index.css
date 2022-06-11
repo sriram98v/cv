@@ -1,3 +1,20 @@
+/************************************************
+              Color Schemes start
+*************************************************/
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-offset: #f7f7f9;
+  --color-text: #373a3c;
+  --color-text-offset: #818a91;
+  --color-border: #eceeef;
+  --color-primary: #ff335f;
+  --color-primary-offset: #ff1447;
+  --color-secondary: #43a9a3;
+}
+
+
+
 .pa1 {padding: 1rem;}
 .pa2 {padding: 2rem;}
 .pl1 {padding-left: 1rem;}
@@ -9,8 +26,14 @@
 .flex-around{justify-content: space-around;}
 .flex-between{justify-content: space-between;}
 .flex-end{justify-content: end;}
-.flex-center{justify-content: center;}
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
 .header-margin{margin-top: 4.5rem;}
+.w-100{ width: 100%; }
+.tc {text-align: center;}
+.flex-column{ flex-direction: column; }
 
 @media (max-width: 840px) {
 .flex-between-md {justify-content: space-between;}
@@ -347,25 +370,22 @@
   }
 
   a {
-    color: #5755d9;
-    outline: none;
-    text-decoration: none;
+    cursor: grab;
+    color:var(--color-secondary)
   }
-  
-  a:focus {
-    box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    left:0;
+    width: 0%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    bottom: 0px;
   }
-  
-  a:focus,
-  a:hover,
-  a:active,
-  a.active {
-    color: #302ecd;
-    text-decoration: underline;
-  }
-  
-  a:visited {
-    color: #807fe2;
+  a:hover::before {
+    width: 100%;
   }
 
   .gray { 
@@ -385,4 +405,15 @@
     display: flex;
     align-items: center;
     justify-content: left;
+}
+
+a.social{
+  padding: 1rem;
+  color: var(--color-text);
+}
+.social:hover {
+  color: var(--color-primary)
+}
+.social::before {
+  display: none;
 }
